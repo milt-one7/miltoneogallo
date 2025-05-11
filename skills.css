@@ -1,0 +1,270 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+/* Style the anchor link to look like a button */
+a {
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Add padding inside the button */
+  background-color: #007bff; /* Background color */
+  color: white; /* Text color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block; /* Make it behave like a block element */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect */
+a:hover {
+  background-color: #0056b3; /* Darker shade when hovering */
+}
+
+/* Focus effect (for accessibility) */
+a:focus {
+  outline: 2px solid #0056b3; /* Outline on focus */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #343a40;
+    text-align: center;
+}
+/* Contact Section */
+#contact {
+    padding: 50px 10%;
+    background-color: #cce4ff;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+    border-radius: 10px;
+  width:100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-decoration:none;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-buttons {
+    margin-top: 20px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3b3b6b;
+    color: white;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #ff6347;
+    transform: translateY(-5px);
+}
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #f1f1f1;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+}
+
+.skill-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skill-box p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #e9ecef;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.project-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    }
+
+.project-box h3 {
+    font-size: 1.3rem;
+    color: #343a40;
+}
+
+.project-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container,
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-box,
+    .project-box {
+        width: 80%;
+    }
+}
+
+
+/* General styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container to center content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Styles for larger screens (desktop/laptop) */
+@media (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    nav ul li {
+        padding: 15px 25px;
+    }
+}
+
+/* Styles for tablets and small screens */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
+/* Styles for mobile phones */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 8px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}

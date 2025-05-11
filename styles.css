@@ -1,0 +1,483 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #3b3b6b, #ffd700); /* Dark Blue to Gold */
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Home Section */
+#home {
+    background: linear-gradient(135deg, #ffd700, #3b3b6b);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+
+.profile-container {
+    margin-top: 20px;
+    animation: zoomIn 2s ease-in-out;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* About Section */
+#about {
+    padding: 50px 10%;
+    background-color: #cce4ff;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Basic Styles for the project and services*/
+/* Buttons Container */
+.buttons-container {
+    display: flex;
+    justify-content: center;  /* This centers the buttons horizontally */
+    gap: 20px;  /* Adds some space between the buttons */
+    margin-bottom: 0px; /* Optional: Adds space below the buttons */
+    background-color: #f4f4f4;
+}
+
+/* Style for buttons */
+.toggle-btn {
+    background-color: #b3d0ff;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #cce4ff;
+    color :black;
+}
+
+/* Hidden Section Styling (Initially Hidden) */
+.hidden-section {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* Section Header Styling */
+h3 {
+    color: #3b3b6b;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Unordered List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .toggle-btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+    }
+
+
+/* Projects Section */
+#projects {
+    padding: 50px 10%;
+    background-color: #F5F5DC;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project {
+    background-color: #cce4ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+transition: transform 0.6s ease, box-shadow 0.3s ease;
+cursor: pointer;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.1rem;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    background: #b3d0ff;
+    transform: scale(1.05);
+    transform: translateY(-5px);
+}
+/* Blog Button Styling */
+.blog-button {
+    background-color: #0056b3;
+    color: black; /* White text */
+    padding: 12px 25px; /* Add padding around the text */
+    font-size: 0.8rem; /* Font size */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Ensure it behaves like a block element */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center; /* Center align the text inside the button */
+}
+
+.blog-button:hover {
+    background-color: #e0e0e0; /* Darker blue when hovered */
+    transform: scale(1.05); /* Slightly scale up the button */
+}
+
+.blog-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add a glowing border when focused */
+}
+
+
+/* Technical Skills Section */
+.skills-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #f4f4f9;
+}
+
+.skills-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Create a 4-column grid for desktop */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style for each skill */
+.skill {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.skill img {
+    width: 50%;  /* Reduced size for the images */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-name {
+position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effect */
+.skill:hover {
+    background-color: #3b3b6b;
+    transform: scale(1.1);
+}
+
+.skill:hover .skill-name {
+    opacity: 1;
+}
+
+.skill:hover img {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller screens (tablets) */
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile screens */
+        gap: 15px;
+    }
+
+    .skill {
+        height: 100px; /* Adjust height for smaller screens */
+    }
+
+    .skill-name {
+        font-size: 1rem; /* Reduce font size for mobile */
+    }
+
+    .skill img {
+        width: 40%;  /* Further reduce the image size on mobile */
+    }
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 10%;
+    background-color: #cce4ff;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+    border-radius: 10px;
+  width:100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-buttons {
+    margin-top: 20px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3b3b6b;
+    color: white;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #ff6347;
+    transform: translateY(-5px);
+}
+.contact-form-container {
+    background-color: #cce4ff; /* Light blue background */
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #003366;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1a73e8;
+}
+
+/* Input Fields */
+.contact-form label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1558a5;
+}
+
+/* LinkedIn Button */
+.linkedin-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3b3b6b;
+    color: white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.linkedin-btn:hover {
+    background-color: #005582; /* Darker blue on hover */
+    transform: translateY(-5px);
+}
+/* Footer Section */
+main {
+      flex: 1;
+    }
+footer {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      position: relative;
+    }
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
